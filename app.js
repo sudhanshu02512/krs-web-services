@@ -4,6 +4,13 @@ const express = require('express');
 /** Initial Node App using express */
 const app = express();
 
+/** Middleware to parse JSON request bodies */
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+/** DISABLED FOR NOW --- Middleware to parse url-encoded request bodies */ 
+//app.use(bodyParser.urlencoded({ extended: true }));
+
 /**Port Setting */
 const PORT = process.env.PORT || 8010;
 
@@ -17,3 +24,7 @@ const krishnaRoutes = require('./routes/krishna');
 
 /**Route Setting */
 app.use('/',krishnaRoutes);
+
+/**Api Routes Configuration */
+const apiRoutes = require('./routes/api');
+app.use('/api',apiRoutes);
