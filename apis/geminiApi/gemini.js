@@ -8,7 +8,6 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 /** Gemini Router */
 router.get('/',async (req,res)=>{
-    console.log(req.body.prompt);
     const prompt = req.body?.prompt;
     const result = prompt ? await model.generateContent(prompt) : {"error":"Please provide prompt in the body"};
     res.json(result);
