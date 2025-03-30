@@ -10,4 +10,8 @@ router.get('/',(req,res)=>{
 const geminiRoute = require('../apis/geminiApi/gemini');
 router.use('/gemini',geminiRoute);
 
+/**qr Api Routing Configuration */
+const qrRoute = require('../apis/qrApi/qr');
+router.use('/qr',qrRoute);
+
 module.exports = router;
