@@ -4,6 +4,10 @@ const express = require('express');
 /** Initial Node App using express */
 const app = express();
 
+/** CORS Middleware */
+const cors = require('cors');
+app.use(cors());
+
 /** Middleware to parse JSON request bodies */
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
