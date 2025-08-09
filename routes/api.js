@@ -27,4 +27,8 @@ router.use('/gemini',geminiRoute);
 const qrRoute = require('../apis/qrApi/qr');
 router.use('/qr',qrRoute);
 
+/**Static Json Api Routing Configuration */
+const staticJson = require('../apis/staticJsonApi/staticJson');
+router.use('/staticjson',staticJson);
+
 module.exports = router;
