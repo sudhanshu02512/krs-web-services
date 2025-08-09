@@ -7,9 +7,9 @@ const {version,name} = require('../package.json');
 /** Api Home Configuration*/
 router.get('/',(req,res)=>{
     const apiList = [
-    { method: 'GET', path: '/gemini', description: 'Call Google Gemini AI API' },
-    { method: 'GET', path: '/qr', description: 'Generate QR code' },
-    { method: 'POST', path: '/qr', description: 'Generate QR code' },
+    { method: 'GET', path: '/api/gemini', description: 'Call Google Gemini AI API' },
+    { method: 'GET', path: '/api/qr', description: 'Generate QR code' },
+    { method: 'POST', path: '/api/qr', description: 'Generate QR code' },
     ];
     const response ={
         status: 'success',
