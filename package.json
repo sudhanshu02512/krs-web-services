@@ -4,7 +4,7 @@
   "description": "KRS Web Services",
   "main": "webservices.js",
   "scripts": {
-    "start":"node webservices.js",
+    "start": "node webservices.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +15,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^4.21.2",
     "qr-image": "^3.2.0"
   }

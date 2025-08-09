@@ -15,6 +15,9 @@ app.use(bodyParser.json());
 /** DISABLED FOR NOW --- Middleware to parse url-encoded request bodies */ 
 //app.use(bodyParser.urlencoded({ extended: true }));
 
+//DOTENV Configuration
+require('dotenv').config();
+
 /**Port Setting */
 const PORT = process.env.PORT || 8010;
 
