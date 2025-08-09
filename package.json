@@ -1,15 +1,15 @@
 {
-  "name": "zx-node-app",
+  "name": "krs-node-app",
   "version": "0.0.1",
-  "description": "Zx Node Application",
+  "description": "KRS Node Application",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Krishna"
+    "KRS"
   ],
-  "author": "Krishna & Sudhanshu",
+  "author": "KRS",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
