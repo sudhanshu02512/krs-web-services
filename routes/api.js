@@ -1,9 +1,22 @@
 const express = require('express');
 const router = express.Router();
 
+//Get package.json details
+const {version,name} = require('../package.json');
+
 /** Api Home Configuration*/
 router.get('/',(req,res)=>{
-    res.send('Api Home');
+    const apiList = [
+    { method: 'GET', path: '/gemini', description: 'Call Google Gemini AI API' },
+    { method: 'GET', path: '/qr', description: 'Generate QR code' },
+    { method: 'POST', path: '/qr', description: 'Generate QR code' },
+    ];
+    const response ={
+        status: 'success',
+        service: name,
+        availableAPIs: apiList
+    }
+    res.send(response);
 })
 
 /**Gemini Api Routing Configuration */
