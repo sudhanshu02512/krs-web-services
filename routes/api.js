@@ -10,6 +10,7 @@ router.get('/',(req,res)=>{
     { method: 'GET', path: '/api/gemini', description: 'Call Google Gemini AI API' },
     { method: 'GET', path: '/api/qr', description: 'Generate QR code' },
     { method: 'POST', path: '/api/qr', description: 'Generate QR code' },
+    { method: 'GET', path: '/api/staticJson', description: 'Get Static Json code for testing' },
     ];
     const response ={
         status: 'success',
