@@ -11,6 +11,7 @@ router.get('/',(req,res)=>{
     { method: 'GET', path: '/api/qr', description: 'Generate QR code' },
     { method: 'POST', path: '/api/qr', description: 'Generate QR code' },
     { method: 'GET', path: '/api/staticJson', description: 'Get Static Json code for testing' },
+    { method: '-', path: '/api/salesforceRest', description: 'Building' },
     ];
     const response ={
         status: 'success',
@@ -31,5 +32,9 @@ router.use('/qr',qrRoute);
 /**Static Json Api Routing Configuration */
 const staticJson = require('../apis/staticJsonApi/staticJson');
 router.use('/staticjson',staticJson);
+
+/**Salesforce Rest Apis */
+// const salesforceRest = require('../apis/salesforceRestApis/salesforceRest');
+// router.use('/salesforceRest',salesforceRest);
 
 module.exports = router;
