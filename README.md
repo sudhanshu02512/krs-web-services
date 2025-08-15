@@ -28,9 +28,9 @@ It is no longer actively maintained — preserved here for legacy reference only
 
 If you have questions, feedback, or require support regarding this repository:
 
-- **Email:** [your.email@example.com](mailto:sudhanshu02512@gmail.com)  
+- **Email:** [sudhanshu02512@gmail.com](mailto:sudhanshu02512@gmail.com)  
 - **GitHub Issues:** [Open an Issue](https://github.com/your-org/krs-web-services-deprecated-commonjs/issues)  
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/sudhanshu-sudhanshu/)  
+- **LinkedIn:** [Sudhanshu Sudhanshu](https://www.linkedin.com/in/sudhanshu-sudhanshu/)  
 
 
 
